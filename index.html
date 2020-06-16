@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+
+    });
+    </script>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#aboutme">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#myblog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mycontact">Contact Me</a>
+                            </li>
+                       
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main_text">
+                        <h2 class="main_head">I AM KAUNG HTET SOE</h2>
+                        <h5 class="main_sub">Designer, Developer</h5>
+                        <button class="btn-test">contact me</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mtb-50 about_img">
+                    <img src="https://us.123rf.com/450wm/onlyyouqj/onlyyouqj1906/onlyyouqj190600582/124511672-men-in-hoodies-in-black-background.jpg?ver=6" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-6 mtb-50 text-center">
+                    <h2 class="about_head">About Me</h2>
+                    <p class="about_sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate omnis voluptas libero? Distinctio, cumque omnis eius ea vero sed ipsa, repudiandae velit enim eos dolores consectetur inventore in, recusandae nulla. lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum similique itaque quia praesentium. Voluptate error laudantium veniam quasi assumenda incidunt eos beatae, vel earum delectus, consectetur laboriosam optio ipsam et?</p>
+                    <button class="download_cv">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mtb-50 text-center services_head">
+                    <h2>MY SERVICES </h2>
+                    <hr class="mtb-15">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="text-center single_service">
+                        <i class="fas fa-laptop service_icon"></i>
+                        <h5>Web Design</h5>
+                        <hr class="mtb-15">
+                        <p>There are many variatio ns of pssages of Lorm available, bu in some form</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="text-center single_service">
+                        <i class="fas fa-laptop service_icon"></i>
+                        <h5>Web Design</h5>
+                        <hr class="mtb-15">
+                        <p>There are many variatio ns of pssages of Lorm available, bu in some form</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="text-center single_service">
+                        <i class="fas fa-laptop service_icon"></i>
+                        <h5>Web Design</h5>
+                        <hr class="mtb-15">
+                        <p>There are many variatio ns of pssages of Lorm available, bu in some form</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="text-center single_service">
+                        <i class="fas fa-laptop service_icon"></i>
+                        <h5>Web Design</h5>
+                        <hr class="mtb-15">
+                        <p>There are many variatio ns of pssages of Lorm available, bu in some form</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="gallery-title">PORTFOLIO</h2>
+            </div>
+
+            <section>
+                
+                <div align="center">
+                    <button class="btn btn-default filter-button" data-filter="all">All</button>
+                    <button class="btn btn-default filter-button" data-filter="hdpe">Web Design</button>
+                    <button class="btn btn-default filter-button" data-filter="all">Graphic Design</button>
+                    <button class="btn btn-default filter-button" data-filter="hdpe">Photography</button>
+                </div>
+
+                <br/>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="img/portfolio/001.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="img/portfolio/002.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="img/portfolio/003.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                        <img src="img/portfolio/004.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="img/portfolio/005.jpg" class="img-responsive">
+                    </div>
+
+          </section>
+        </div>
+    </div>
+</div>
+
+<div class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-center m-auto">
+                <h2>Testimonials</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>   
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="img-box"><img src="img/portfolio/006.jpg" alt=""></div>
+                            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                            <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="img-box"><img src="img/portfolio/007.jpg" alt=""></div>
+                            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                            <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="img-box"><img src="img/portfolio/008.jpg" alt=""></div>
+                            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                            <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="worktogether">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Let's Work Together On Your Next Project !</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog" id="myblog">
+    <div class="container">
+        <div class="row">   
+            <div class="col-md-12 text-center myblog">
+                <h2>MY BLOG</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-white">
+                <div class="blog_post">
+                    <img src="https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp?image_crop_resized=1280x720"  class="img-responsive" alt="" class="mtb-30">
+                    <h2 class="blog_head">Laravel</h2>
+                    <p class="blog_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis placeat, provident repellat aut ea omnis nostrum</p>
+                    <a href="">READ MORE</a>
+                    <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-white">
+                <div class="blog_post">
+                    <img src="https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp?image_crop_resized=1280x720"  class="img-responsive" alt="" class="mtb-30">
+                    <h2 class="blog_head">Laravel</h2>
+                    <p class="blog_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis placeat, provident repellat aut ea omnis nostrum</p>
+                    <a href="">READ MORE</a>
+                    <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-white">
+                <div class="blog_post">
+                    <img src="https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp?image_crop_resized=1280x720"  class="img-responsive" alt="" class="mtb-30">
+                    <h2 class="blog_head">Laravel</h2>
+                    <p class="blog_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis placeat, provident repellat aut ea omnis nostrum</p>
+                    <a href="">READ MORE</a>
+                    <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-white">
+                <div class="blog_post">
+                    <img src="https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp?image_crop_resized=1280x720"  class="img-responsive" alt="" class="mtb-30">
+                    <h2 class="blog_head">Laravel</h2>
+                    <p class="blog_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis placeat, provident repellat aut ea omnis nostrum</p>
+                    <a href="">READ MORE</a>
+                    <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="mycontact">
+    <div class="container">
+        <div class="row">
+               <div class="col-md-12 text-center text-white">
+                   <h2>CONTACT ME</h2>
+                   <hr>
+               </div>   
+        </div>
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12 contact_item">
+                    <div class="content_details">
+                        <i class="fas fa-comment icon"></i>
+                        <p>Chat Online</p>
+                    </div>
+
+                    <div class="content_details">
+                        <i class="fas fa-phone icon"></i>
+                        <p>+95 9421924921</p>
+                    </div>
+
+                    <div class="content_details">
+                        <i class="far fa-envelope icon"></i>
+                        <p>kaunghtetsoe@gmail.com</p>
+                    </div>
+                    
+                    <div class="content_details">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <p>Yangon</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 content_form mt-30">
+                    <form action="" method="post">
+                        <input class="content_text" type="text" name="name" placeholder="Enter your name">
+                        <input class="content_text" type="email" name="email" placeholder="Enter your email">
+                        <input class="content_message" type="text" name="message" placeholder="Enter your message">
+                        <button class="btn-form">Send</button>
+                    </form>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright © 2020 Kaung Htet Soe</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,574 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+    color: #fff;
+}
+
+.menu{
+    background-color: #000000;
+    color: #fff;
+}
+
+.menu ul li{
+    padding: 0 30px;
+}
+
+.menu ul li a{
+    color: white;
+} 
+
+
+
+/* main */
+
+.main{
+    padding:130px;
+    background: url("https://c4.wallpaperflare.com/wallpaper/164/134/472/photography-black-man-hat-white-shirt-red-tie-dark-background-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main_text{
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.main_head{
+    color: #ddd;
+}
+
+.main_sub{
+    padding:10px 0;
+    letter-spacing: 2px;
+    color:#fff;
+}
+
+.btn-test{
+    margin-top: 10px;
+    border:1px solid #fff;
+    color:#fff;
+    background-color: #111;
+    padding:10px 25px;
+    border-radius: 20px;
+}
+
+.btn-test:hover{
+    background-color: transparent;
+    transition: 1000ms;
+}
+
+/* about */
+
+.about{
+    background-color: #f5eded;
+    color: #3e3636;
+}
+
+.about_head{
+    margin-bottom: 25px;
+}
+
+.about_sub{
+    text-align: justify;
+    font-size: 13px;
+}
+
+.download_cv{
+    margin-top: 10px;
+    border:1px solid #fff;
+    color:#fff;
+    background-color: #111;
+    padding:10px 25px;
+    border-radius: 20px;
+}
+
+.download_cv:hover{
+    background-color: #3e3636;
+    transition: 1000ms;
+}
+
+/* services */
+
+.services{
+    background-color: #000000;
+    color: #fff;
+}
+
+.single_service{
+    background-color: #252525 ;
+    padding:50px 20px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    border: 1px solid #fff;
+	box-shadow: 8px 2px 20px #000;
+	border-radius: 15px;
+}
+
+.single_service:hover{
+	box-shadow: 2px 2px 29px #dbdbdb;
+}
+
+
+.service_icon{
+    padding-bottom: 20px;
+}
+
+.single_service hr {
+    border-color: #dbdbdb;
+    border-width: 2px;
+    width: 50px;
+}
+
+.services_head hr{
+    border-color: #dbdbdb;
+    border-width: 2px;
+    width: 100px;
+}
+
+/* portfolio */
+
+.portfolio{
+    background-color: #2B2B2B;
+}
+
+.gallery-title
+{
+    margin-top: 50px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+/* //testimonials */
+.testimonials {
+	font-family: "Open Sans", sans-serif;
+}
+
+.testimonials h2{
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+.testimonials h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #222;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+
+
+.carousel .item {
+	color: #111;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #d72323;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background-image: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+/* //work together */
+
+.worktogether{
+    padding:130px 0;
+    background: url("https://wallpaperaccess.com/full/636836.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.worktogether h3{
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* blog */
+
+.blog{
+    padding: 30px 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.myblog hr{
+    border-color: #dbdbdb;
+    border-width: 2px;
+    width: 100px;
+}
+
+.blog_head{
+    color:#d72323;
+    /* font-size: bold; */
+}
+
+.blog_post{
+    background-color: #252525;
+    padding: 30px 30px;
+    margin: 50px 0px;
+    border: 1px solid #000;
+	box-shadow: 8px 2px 20px #000;
+	border-radius: 5px;
+}
+
+.blog_content{
+    padding-bottom: 10px;
+}
+
+.blog_post a:hover{
+    color: #d72323;
+}
+
+/* .single_service{
+    background-color: #252525 ;
+    padding:50px 20px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    border: 1px solid #fff;
+	box-shadow: 8px 2px 20px #000;
+	border-radius: 15px;
+}
+
+.single_service:hover{
+	box-shadow: 2px 2px 29px #dbdbdb;
+} */
+
+
+.contact{
+    background-color: #222;
+    color: #fff;
+    padding-top: 20px;   
+}
+
+.contact hr{
+    border-color: #dbdbdb;
+    border-width: 2px;
+    width: 100px;
+}
+
+.content_form .content_text{
+    width: 350px;
+    display: block;
+    padding:10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin:20px 0;
+}
+
+.content_form .content_text:focus, .content_form .content_message:focus{
+    outline: none;
+    border: 2px solid #000;
+}
+
+.content_form .content_message{
+    width: 350px;
+    display: block;
+    padding:10px 20px;
+    padding-bottom: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin:10px 0;
+}
+
+.content_form .btn-form{
+    padding:10px 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.content_form .btn-form:hover{
+    background-color: #3e3636;
+    color: white;
+    transition: 1000ms;
+    
+}
+
+.contact_item{
+    padding-bottom:50px 0;
+}
+
+.content_details{
+    margin-left: 150px;
+    padding:30px 0;
+}
+
+.contact_item .icon{
+    /* margin: 30px 0; */
+    position: relative;
+    /* left: 20%; */
+    top: 20px;
+    left: 30px;
+}
+
+.contact_item p{
+    margin-left: 55px;
+    position: absolute;
+    /* padding: 0px 0; */
+
+}
+
+.footer{
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    /* padding:20px 0;/ */
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.pb-50{
+    padding-bottom: 50px;
+}
+
+.mtb-50{
+    margin:50px 0;
+}
+
+.mlr-15{
+    margin: 0 15px;
+}
+
+
+@media(max-width: 991px) and (min-width: 768px){
+    
+    .about_head{
+        margin-top: 0px;
+    }
+
+    .about_sub{
+        font-size: 11px;
+    }
+
+    .content_details {
+        margin-left: 45px;
+        padding: 30px 0;
+        margin-top: 6px;
+    }
+   
+}
+
+@media (max-width: 767px) and (min-width: 578px){
+    .about{
+        padding: 50px 0;
+    }
+
+    .about img{
+        padding-left: 35px;
+    }
+
+    .mtb-50 {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .content_form{
+        margin: 100px;
+    }
+
+    .content_form .content_text{
+        margin:15px 0;
+    }
+
+    .content_form .btn-form{
+        margin-left: 95px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 577px) and (min-width: 480px){
+    .about{
+        padding: 50px 0;
+    }
+
+    .about img{
+        padding-left: 35px;
+    }
+
+    .mtb-50 {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .content_form{
+        margin: 100px;
+    }
+
+    .content_form .content_text{
+        margin:15px 0;
+    }
+
+    .content_form .btn-form{
+        margin-left: 95px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 479px) and (min-width: 400px){
+    .about{
+        padding: 50px 0;
+    }
+
+    .about img{
+        padding-left: 35px;
+    }
+
+    .mtb-50 {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .content_form{
+        margin: 0px auto;
+    }
+
+    .content_form .content_text{
+        margin:15px 0;
+    }
+
+    .content_form .btn-form{
+        margin-left: 95px;
+        margin-bottom: 10;
+    }
+
+    .content_details {
+       margin: 0px auto;
+    }
+}
